@@ -1,0 +1,342 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900&display=swap');
+*
+{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+ 
+ 
+}
+
+header
+{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 10px 100px;
+  z-index: 1000;
+  display: flex;
+  justify-content: space-between;
+   align-items: center; 
+   transition: background 2s;
+}
+
+.logo{
+
+  width: 10%;
+  height: 20%;
+}
+.logo img{
+  width: 50%;
+}
+
+.toggle ul{
+  margin-left: 200px;
+  
+  
+}
+.toggle li{
+  display: inline-flex;
+  margin: 20px;
+}
+.toggle li a{
+  text-decoration: none;
+  color: white;
+}
+header:hover{
+  background: white;
+
+}
+header:hover li a{
+  color: #111;
+}
+
+.showcase
+{
+  width: 80%;
+  height: 100vh;
+}
+ .showcase.active
+{
+  right: 300px;
+} 
+
+.showcase video
+{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0.8;
+}
+.overlay
+{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #034972;
+  mix-blend-mode: overlay;
+}
+.text
+{
+  position: relative;
+  top: 250px;
+  left: 100px;
+  z-index: 10;
+}
+
+.text h2
+{
+  font-size: 5em;
+  font-weight: 800;
+  color: #fff;
+  line-height: 1em;
+  text-transform: uppercase;
+}
+.text h3
+{
+  font-size: 4em;
+  font-weight: 700;
+  color: #fff;
+  line-height: 1em;
+  text-transform: uppercase;
+}
+.text p
+{
+  font-size: 1.1em;
+  color: #fff;
+  margin: 20px 0;
+  font-weight: 400;
+  max-width: 700px;
+}
+.text a, .ict-content a, .paralax a
+{
+  display: inline-block;
+  font-size: 1em;
+  background: #fff;
+  padding: 10px 30px;
+  text-transform: uppercase;
+  text-decoration: none;
+  font-weight: 500;
+  margin-top: 10px;
+  color: #111;
+  letter-spacing: 2px;
+  transition: 0.2s;
+}
+.text a:hover, .white a:hover, .paralax a:hover, .ict-content a:hover, .paralax a:hover
+{
+  letter-spacing: 6px;
+}
+.social
+{
+  position: absolute;
+  left: 100px;
+  z-index: 10;
+  bottom: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.social li
+{
+  list-style: none;
+}
+.social li a
+{
+  display: inline-block;
+  margin-right: 20px;
+  filter: invert(1);
+  transform: scale(0.5);
+  transition: 0.5s;
+}
+.social li a:hover
+{
+  transform: scale(0.5) translateY(-15px);
+}
+.menu
+{
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 300px;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.menu ul
+{
+  position: relative;
+}
+.menu ul li
+{
+  list-style: none;
+}
+.menu ul li a
+{
+  text-decoration: none;
+  font-size: 24px;
+  color: #111;
+}
+.menu ul li a:hover
+{
+  color: #03a9f4; 
+}
+
+
+
+/* -------------------------------news section------------------------------------- */
+
+
+.news{
+  padding: 40px;
+ 
+  
+}
+.container{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+ 
+}
+
+.news h2 , .text-head h2{
+  text-align: center;
+}
+.paragraph{
+  padding: 10px;
+}
+
+.paragraph h3{
+  padding: 5px;
+  font-size: small;
+}
+.news1{
+  width: 350px;
+  border-radius: 10px;
+  box-shadow: 2px 2px 2px 2px rgb(214, 210, 210);
+  margin: 20px;
+}
+
+.news1 img{
+  width: 50%;
+  height: 30%;
+}
+
+/* ict section styling */
+.ict{
+  background-image: linear-gradient(to right,rgb(10, 22, 128),rgb(41, 7, 231),rgb(10, 57, 185),#0e11d6,rgb(4, 2, 110));
+}
+.row{
+  display: flex;
+}
+.col-img, .col-content{
+  flex: 1;
+  margin: 10px;
+  padding: 80px;
+}
+.col-img img{
+  max-width: 100%;
+  height: auto;
+  padding: 5px;
+  border-radius: 12px;
+}
+
+.col-content p, .paralax p{
+  font-size: 2.1em;
+  color: #fff;
+  margin: 20px 0;
+  font-weight: 400;
+  max-width: 700px;
+}
+.white p, .paralax p{
+  color: #111 !important;
+}
+.white a, .paralax a{
+  background-image: linear-gradient(to right,rgb(10, 22, 128),rgb(41, 7, 231),rgb(10, 57, 185),#0e11d6,rgb(4, 2, 110)) !important;
+}
+/* sports section styling */
+.paralax {
+  background-image: url("sport.png");
+  min-height: 500px;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  text-align: center;
+}
+.paralax p{
+  padding-top: 200px;
+}
+
+
+
+/* ----------------------------------responsive styles------------------------------------- */
+
+@media (max-width: 991px)
+{
+  .showcase,
+  .showcase header,
+  .container
+  {
+    padding: 40px;
+  }
+  .text h2
+  {
+    font-size: 3em;
+  }
+  .text h3
+  {
+    font-size: 2em;
+  }
+  .col-img img{
+    width: 800px;
+    height: 100%;
+    padding: 0;
+  }
+  
+  .col-content p, 
+  .paralax p{
+    font-size: 1em;
+    padding: auto;
+  }
+}
+
+@media (max-width: 400px)
+{
+  .showcase,
+  .showcase header,
+  .container
+  {
+    padding: 20px;
+  }
+  .text h2
+  {
+    font-size: 2em;
+  }
+  .text h3
+  {
+    font-size: 2em;
+  }
+  .col-img img{
+    max-width: 100%;
+    height: auto;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .col-content p, 
+  .paralax p{
+    font-size: 1.2em;
+    padding: 0;
+    margin: 0;
+  }
+  .row{
+    flex-direction: column;
+  }
+}
